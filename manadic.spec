@@ -2,7 +2,7 @@ Summary:	A dictionary for Mana
 Summary(pl.UTF-8):	Słownik dla Mana
 Name:		manadic
 Version:	0.1.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.jp/shinji/15963/%{name}-%{version}.tar.bz2
@@ -13,7 +13,6 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	mana
 Requires:	mana
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
