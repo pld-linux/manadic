@@ -2,7 +2,7 @@ Summary:	A dictionary for Mana
 Summary(pl.UTF-8):	Słownik dla Mana
 Name:		manadic
 Version:	0.1.4
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.jp/shinji/15963/%{name}-%{version}.tar.bz2
@@ -35,7 +35,7 @@ Słownik dla Mana.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/etc/manarc
+install -d $RPM_BUILD_ROOT/etc
 
 %{__make} install \
 	CHASEN_CHASENRC_PATH=$RPM_BUILD_ROOT/etc/manarc \
