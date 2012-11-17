@@ -2,7 +2,7 @@ Summary:	A dictionary for Mana
 Summary(pl.UTF-8):	Słownik dla Mana
 Name:		manadic
 Version:	0.1.4
-Release:	3
+Release:	4
 License:	BSD-like
 Group:		Applications/Text
 Source0:	http://dl.sourceforge.jp/shinji/15963/%{name}-%{version}.tar.bz2
