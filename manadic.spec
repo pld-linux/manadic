@@ -3,13 +3,13 @@ Summary(pl.UTF-8):	Słownik dla Mana
 Name:		manadic
 Version:	0.1.4
 Release:	3
-License:	GPL
-Group:		Applications
+License:	BSD-like
+Group:		Applications/Text
 Source0:	http://dl.sourceforge.jp/shinji/15963/%{name}-%{version}.tar.bz2
 # Source0-md5:	051b564ccea0e0257fe404a715845fe9
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://sourceforge.jp/projects/shinji/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.13
 BuildRequires:	automake
 BuildRequires:	mana
 Requires:	mana
@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README doc/ipadic-ja.pdf
+%doc AUTHORS COPYING ChangeLog NEWS README doc/ipadic-ja.pdf
 %config(noreplace) %verify(not md5 mtime size) /etc/manarc
 %{_libdir}/mana/dic
