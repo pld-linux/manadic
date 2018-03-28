@@ -2,7 +2,7 @@ Summary:	A dictionary for Mana
 Summary(pl.UTF-8):	Słownik dla Mana
 Name:		manadic
 Version:	0.1.4
-Release:	5
+Release:	6
 License:	BSD-like
 Group:		Applications/Text
 Source0:	http://dl.sourceforge.jp/shinji/15963/%{name}-%{version}.tar.bz2
@@ -48,4 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog NEWS README doc/ipadic-ja.pdf
 %config(noreplace) %verify(not md5 mtime size) /etc/manarc
-%{_libexecdir}/mana/dic
+%dir %{_libdir}/mana
+%{_libdir}/mana/dic
